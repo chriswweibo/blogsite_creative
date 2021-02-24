@@ -7,7 +7,7 @@
          <h1>{{ .Title }}</h1>
          {{ .Content }}
          {{ with .Site.Params.email }}
-         <h4>Drop me a line, maybe?</h4>
+         <h4>REPLIES TYPICALLY WITHIN 24 HOURS.</h4>
          <form id="contact" class="contact form" method="POST" data-netlify="true">
            <div class="controls">
              <div class="form-group">
@@ -19,8 +19,8 @@
                <input type="email" name="email" id="email" required="required" class="form-control">
              </div>
              <div class="form-group">
-               <label for = 'subject'> Subject *</label>
-               <select>
+               <label for='subject'> Subject *</label>
+               <select  data-form="formed">
                        <option value="job">Job</option>
                        <option value="family" selected="selected">Family</option>
                        <option value="hobby">Hobby</option>
